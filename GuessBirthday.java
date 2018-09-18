@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class GuessBirthday {
   public static void main (String [] args) {
-String set1 = "1 3 5 7 \n" +
+    String set1 = "1 3 5 7 \n" +
            "9 11 13 15 \n" +
            "17 19 21 23 \n" +
            "25 27 29 31";
