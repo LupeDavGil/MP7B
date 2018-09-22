@@ -2,19 +2,19 @@ import java.util.Scanner;
 public class CantidadesProporc{
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-    int Ct1, Ct2, Ct3, M ;
+    int Ct1A, Ct2B, Ct3C, M ;
     System.out.println("ingresa el primer valor : ");
-    Ct1 = input.nextInt();
+    Ct1A = input.nextInt();
     System.out.println("ingresa el segundo valor : ");
-    Ct2 = input.nextInt();
+    Ct2B = input.nextInt();
     System.out.println("ingresa el tercer valor : ");
-    Ct3 = input.nextInt();
-    if (Ct1>Ct2 && Ct1>Ct3){
-    System.out.println("valor mayor es : " + Ct1);
-  }else if ( Ct2>Ct1 && Ct2>Ct3){
-    System.out.println("valor mayor es : " + Ct2);
+    Ct3C = input.nextInt();
+    if (Ct1A>Ct2B && Ct1A>Ct3C){
+    System.out.println("valor mayor es : " + Ct1A);
+  }else if ( Ct2B>Ct1A && Ct2B>Ct3C){
+    System.out.println("valor mayor es : " + Ct2B);
   }else{
-    System.out.println("valor mayor es : " + Ct3);
+    System.out.println("valor mayor es : " + Ct3C);
   }
  }
 }
