@@ -8,7 +8,7 @@ public class ValordeNumeros{
     System.out.println("Ingresa un numero:");
     Numero2 = ingreso.nextInt();
 
-    if (num1>num2){
+    if (Numero1>Numero2){
       System.out.println("El numero mayor es: " + Numero1);
     }else{
       System.out.println("El numero mayor es: " + Numero2);
