@@ -7,7 +7,7 @@ import javax.swing.*;
       */
       Curso1.addStudent("Jonathan");
       Curso1.addStudent("Marlen");
-      Curso1.addStudent("Alexa")
+      Curso1.addStudent("Alexa");
 
       String[] studentsDeIngles = Curso1.getStudents();
       String students = "";
@@ -31,24 +31,24 @@ import javax.swing.*;
       Curso3.addStudent("Pedro");
       Curso3.addStudent("Juan");
       Curso3.addStudent("Miguel");
-      */
-      int opc=0;
+
+      int opc= 0;
       do {
           opc= Integer.parseInt(JOptionPane.showInputDialog(null,"1. Nuevo Curso"+" \n"+"2.Ingresa al alumno"+
           "\n" +"3.Eliminar alumno"+ "\n"+ "4.Mostrar al  alumno" ));
           switch(opc){
             case 1:
-            String cn = JOptionPane.showInputDialog(null,"Nombre del Curso");
-            Curso1.setCourseName();
+            String sc = JOptionPane.showInputDialog(null,"Nombre del Curso");
+            Curso1.setCourseName(sc);
               JOptionPane.showMessageDialog(null,Curso1.getCourseName());
               break;
             case 2:
-            String as= JOptionPane.showInputDialog(null,"Ingrese el nombre de un alumno");
-            Curso1.addStudent();
+            String adS= JOptionPane.showInputDialog(null,"Ingrese el nombre de un alumno");
+            Curso1.addStudent(adS);
             break;
             case 3:
-            String Alum=JOptionPane.showInputDialog(null, "\nIngrese al alumno que quiere  eliminar");
-            curso1.dropStudent();
+            String dp=JOptionPane.showInputDialog(null, "\nIngrese al alumno que quiere  eliminar");
+            Curso1.dropStudent(dp);
             break;
             case 4:
               JOptionPane.showMessageDialog(null,Curso2.getStudents());
