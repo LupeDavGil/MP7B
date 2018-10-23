@@ -1,62 +1,43 @@
 public class Course{
-  private String courseName;
-  private String [] students = new String [100];
-  private int numberOfStudents = 0;
+      private String courseName;
+      private String[] students = new String[100];
+      private int numberOfStudents = 0;
 
-  public String getCourseName(){
-    return this.courseName;
+      int [] nomvar = new int[10];
+      String [] var2 = new String[50];
+      float [] var3 = new float[4];
+
+      //constructor vacio
+      public Course(){
+
+      }
+      //constructor
+      public Course(String courseName){
+        this.courseName = courseName;
+      }
+
+      public String getCourseName() {
+        return this.courseName;
   }
-
-public void setCourseName(String courseName){
-  this.courseName = courseName;
-}
-
-public void addStudent (String student){
-  this.students[numberOfStudents] = student;
-  this.numberOfStudents ++;
-}
-
-public void dropStudent (String student){
-  //tarea para ustedes
-  int index = findStudent(student);
-		if (index >= 0) {
-			dropStudent(index);
-		}
-		else {
-			System.out.println(student + " is not in the course: " + courseName);
-		}
-}
-
-
-
-
-
-private void dropStudent(int index) {
-		String[] s = new String[students.length - 1];
-		for (int i = 0, j = 0; i < s.length; i++, j++) {
-			if (i == index) {
-				j++;
-			}
-			s[i] = students[j];
-		}
-		this.students = s;
-		numberOfStudents--;
-	}
-
-public String[]getStudents(){
+  public void setCourseName(String courseName) {
+    this.courseName = courseName;
+  }
+  public void addStudent(String student) {
+    this.students[numberOfStudents] = student;
+    this.numberOfStudents ++;
+  }
+  public void dropStudent(String student){
+    for (int i=0; i <=   this.students.length-1;i++ ) {
+      if (student.equals(this.students[i])) {
+        this.students[i]=null;
+      }else{
+      }
+    }
+  }
+  public String[] getStudents(){
   return this.students;
-}
-
-public int getNumberOfStudents(){
-  return this.numberOfStudents;
-}
-
-private int findStudent(String student) {
-		for (int i = 0; i < numberOfStudents; i++) {
-			if (students[i].equals(student)) {
-				return i;
-			}
-		}
-		return -1;
-	}
+  }
+  public int getNumberOfStudents(){
+    return this.numberOfStudents;
+  }
 }
